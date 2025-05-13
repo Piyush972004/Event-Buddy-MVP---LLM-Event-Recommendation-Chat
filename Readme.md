@@ -4,7 +4,7 @@
 
 
 ## 🌐 Live Preview
-[![Live Preview](https://img.shields.io/badge/Live-Preview-brightgreen?style=for-the-badge&logo=django)]( https://piyush972004.github.io/Portfolio-Responsive-Design/)
+[![Live Preview](https://gilded-florentine-2013b2.netlify.app/)
 
 ---
 
