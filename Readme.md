@@ -2,10 +2,6 @@
 
 **Event Buddy** is an AI-powered chat interface that helps users discover local events based on their personal preferences. This MVP leverages natural language understanding to provide intelligent event recommendations and real-time notifications through an elegant, messaging-inspired UI.
 
-
-## 🌐 Live Preview
-[![Live Preview](https://gilded-florentine-2013b2.netlify.app/)
-
 ---
 
 ## ✨ Features
@@ -86,6 +82,11 @@
 ---
 
 ## 🚀 Getting Started
+
+
+##  Live Preview : https://gilded-florentine-2013b2.netlify.app/
+
+
 
 ### 1. Clone the Repository
 
