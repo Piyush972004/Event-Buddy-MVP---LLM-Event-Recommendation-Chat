@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    @apply text-gray-900 bg-gray-50;
+    font-feature-settings: "kern";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
+}
+
+@layer components {
+  .user-message {
+    @apply bg-primary-600 text-white rounded-2xl rounded-tr-none py-3 px-4 max-w-[80%] 
+           shadow-sm animate-fade-in ml-auto break-words;
+  }
+
+  .bot-message {
+    @apply bg-white text-gray-900 rounded-2xl rounded-tl-none py-3 px-4 max-w-[80%] 
+           shadow-sm animate-fade-in mr-auto break-words;
+  }
+
+  .typing-indicator span {
+    @apply inline-block w-2 h-2 rounded-full bg-gray-400 mx-0.5 animate-pulse-light;
+  }
+
+  .typing-indicator span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .typing-indicator span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  .event-card {
+    @apply rounded-xl overflow-hidden bg-white shadow-md hover:shadow-lg
+           transition-shadow duration-200 border border-gray-100;
+  }
+
+  .button-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 
+           rounded-lg transition-colors duration-200 flex items-center justify-center
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .button-secondary {
+    @apply bg-white hover:bg-gray-50 text-gray-800 font-medium py-2 px-4 
+           rounded-lg transition-colors duration-200 border border-gray-200
+           flex items-center justify-center;
+  }
+  
+  .badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+}
